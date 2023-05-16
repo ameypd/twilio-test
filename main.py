@@ -41,7 +41,7 @@ def gather():
     return str(response)
 
 # Route to initiate the call
-@app.route('/call', methods=['POST'])
+@app.route('/call', methods=['GET','POST'])
 def call():
     # Get the phone number to call
     phone_number = request.form['phone_number']
