@@ -41,10 +41,10 @@ def gather():
     return str(response)
 
 # Route to initiate the call
-@app.route('/call', methods=['GET','POST'])
+@app.route('/')
 def call():
     # Get the phone number to call
-    phone_number = request.form['phone_number']
+    phone_number = "+919518575475"
 
     client = Client(account_sid, auth_token)
 
